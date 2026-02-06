@@ -1,0 +1,41 @@
+/* Global body styling */
+body {
+  background-image: url("assets/meskel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+
+  /* Center the clock vertically and horizontally */
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+/* Clock container styling */
+.clock-container {
+  /* Creates glassmorphism effect (blur background) */
+  backdrop-filter: blur(0.spx);
+
+  /* Width set relative to viewport height */
+  width: 100vh;
+
+  /* Padding around clock */
+  padding: 10px;
+}
+
+/* Digital clock text styling */
+.clock {
+  color: white;
+  font-size: 8rem;
+  font-weight: bold;
+  font-family: monospace;
+
+  /* Shadow improves visibility on background image */
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.619);
+
+  /* Center text horizontally */
+  text-align: center;
+}
